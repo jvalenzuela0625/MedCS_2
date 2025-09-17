@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedCS_2.Domain\MedCS_2.Domain.csproj" />
+    <ProjectReference Include="..\MedCS_2.Shared\MedCS_2.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Common\Interfaces\Formulas\" />
+    <Folder Include="Common\Interfaces\Requests\" />
+    <Folder Include="Formulas\Commands\" />
+    <Folder Include="Formulas\Dtos\" />
+    <Folder Include="Formulas\Interfaces\" />
+    <Folder Include="Formulas\Queries\" />
+    <Folder Include="Ingredient\Commands\" />
+    <Folder Include="Ingredient\Dtos\" />
+    <Folder Include="Ingredient\Interfaces\" />
+    <Folder Include="Ingredient\Queries\" />
+    <Folder Include="Requests\Commands\" />
+    <Folder Include="Requests\Dtos\" />
+    <Folder Include="Requests\Interfaces\" />
+    <Folder Include="Requests\Queries\" />
+    <Folder Include="Security\Queries\RolePermissions\GetRolePermissionById\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="13.0.0" />
+  </ItemGroup>
+
+</Project>

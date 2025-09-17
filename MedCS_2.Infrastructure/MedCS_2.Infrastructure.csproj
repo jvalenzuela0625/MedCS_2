@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MedCS_2.Application\MedCS_2.Application.csproj" />
+    <ProjectReference Include="..\MedCS_2.Shared\MedCS_2.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AzureAD\" />
+    <Folder Include="Email\" />
+    <Folder Include="Sentri\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>
